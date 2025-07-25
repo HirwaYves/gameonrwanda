@@ -23,6 +23,11 @@
       <a href="index.html" class="logo">
         <img src="logo.png" alt="Game On Rwanda logo">
       </a>
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -114,6 +119,104 @@
   </div>
 </section>
 
+  <!-- ====== Footer ====== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="logo.png" alt="Game On Rwanda">
+              <h3>Game On Rwanda</h3>
+            </div>
+            <p>Transforming workplace culture through the power of sports. Building stronger, healthier, and more connected professional communities across Rwanda.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="news.html">Latest News</a></li>
+              <li><a href="gallery.html">Photo Gallery</a></li>
+              <li><a href="programs.html">Our Programs</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Our Programs</h4>
+            <ul>
+              <li><a href="#">Workplace Football League</a></li>
+              <li><a href="#">Youth Development</a></li>
+              <li><a href="#">Women's Empowerment</a></li>
+              <li><a href="#">Adaptive Sports</a></li>
+              <li><a href="#">Corporate Wellness</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Kigali Business Center<br>KN 4 Avenue, Kigali</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+250 788 123 456</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@gameonrwanda.rw</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Game On Rwanda. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.querySelector('.mobile-menu-toggle');
+      const siteNav = document.querySelector('.site-nav');
+      
+      mobileToggle.addEventListener('click', function() {
+        mobileToggle.classList.toggle('active');
+        siteNav.classList.toggle('active');
+      });
+      
+      // Close menu when clicking on a link
+      const navLinks = document.querySelectorAll('.site-nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileToggle.classList.remove('active');
+          siteNav.classList.remove('active');
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
