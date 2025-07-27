@@ -1714,25 +1714,26 @@ body {
 
 .site-nav .btn--sign-in {
   display: inline-block;
-  padding: 0.3rem 0.9rem;            /* Reduced height for alignment */
-  line-height: 1;                    /* Prevents vertical stretching */
+  padding: 0.3rem 0.9rem;
+  line-height: 1;
   background: var(--soft-gold);
   color: var(--deep-coffee);
-  border: 1.5px solid var(--soft-gold);  /* Thinner border */
+  border: 1.5px solid var(--soft-gold);
   border-radius: 4px;
   font-weight: 600;
-  font-size: 0.95rem;                /* Matches nav font size */
+  font-size: 0.95rem;
   transition: background 0.3s, color 0.3s, border 0.3s;
-  margin-left: 1rem;                /* Space from the last nav link */
-  align-self: center;               /* Aligns well inside flex container */
+  margin-left: 1rem;
+  align-self: center;
 }
 
 .site-nav .btn--sign-in:hover,
 .site-nav .btn--sign-in:focus {
   background: transparent;
   color: var(--soft-gold);
-  border: 1px solid var(--soft-gold);  /* Thinner on hover */
-  box-shadow: none;                   /* Remove any shadow */
-  transform: none;                    /* Keep it flat */
+  border: 1px solid var(--soft-gold);
+  box-shadow: none;
+  transform: none;
 }
+
 
