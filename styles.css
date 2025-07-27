@@ -1724,7 +1724,6 @@ body {
   font-size: 0.95rem;
   transition: background 0.3s, color 0.3s, border 0.3s;
   margin-left: 1rem;
-  align-self: center;
 }
 
 .site-nav .btn--sign-in:hover,
@@ -1733,7 +1732,7 @@ body {
   color: var(--soft-gold);
   border: 1px solid var(--soft-gold);
   box-shadow: none;
-  transform: none;
 }
+
 
 
